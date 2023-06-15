@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1140px;
+}
+.title{
+    font-size: 26px;
+    padding: 3px;
+    margin-left: 700px;
+    position: relative;
+    width: 120px;
+    margin-top: 11px;
+    margin-right: 500px;
+    background-color:#19B4EA;
+}
+.audio{
+    padding: 3px;
+    margin-left: 700px;
+    margin-right: 500px;
+    position: absolute;
+    width: 120px;
+    background-color: aqua;
+}
+.collect-box{
+    height: 30px;
+    background-color: #19B4EA;
+    position: relative;
+}
+.collect-box .inner{
+    margin: 0 auto;
+    width: 1140px;
+    height: 100%;
+    overflow: hidden;/*清除浮动属性*/
+}
+.collect-box .inner .left{
+    color: #fff;
+    height: 100%;
+    cursor:pointer;/*出现手指图标*/
+    line-height: 30px;
+    float: left;
+}
+.collect-box .inner .right{
+    float: right;
+    background-color: #fb7299;
+    width: 200px;
+    height: 30px;
+    display: block;/*把input转化为块级元素*/
+    margin: 0;
+    padding: 0;
+    border: 0 none;/*移除边框*/
+    outline-style: none;/*移除输入框鼠标点击后的默认样式*/
+    text-indent: 1em;
+    color: #fff;
+}
+/* 导航栏 */
+.nav-box{
+    height: 62px;
+}
+.nav-box .wrap{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.nav-box .wrap .left{
+    float: left;
+}
+.nav-box .wrap .left img{
+    margin-top: 3px;
+}
+.nav-box .wrap .right{
+    right: 0;
+    top: 10px;
+    position: absolute;
+}
+.nav-box .wrap .right a{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 3;
+    display: inline-block;/*需要把a链接转成行内块，设置行高*/
+}
+.nav-box .wrap .right a:hover{
+    background-color: #19b4ea;
+    color: #fff;
+}
+.company-intro{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    background-color: aliceblue;
+}
+.company-intro .left{
+    float: left;
+    width: 350px;
+}
+.company-intro .left img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.company-intro .right{
+    float: right;
+    width: 770px;
+}
+.company-intro .right h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.company-intro .right p{
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.company-intro .right a{
+    display: block;
+    width: 80px;
+    padding: 10px 0;
+    border: 1px solid#19b4ea;
+    text-align: center;
+    color: #19b4ea;
+    text-decoration: none;
+}
+.company-intro .right a:hover{
+    color: #fff;
+    background-color: #19b4ea;
+}
+/* 抢购倒计时 */
+.box {
+    margin: 0 auto;
+    position: relative;
+    width: 850px;
+    height: 360px;
+  }
+  .box div {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    line-height: 50px;
+    text-align: center;
+    color: red;
+    position: relative;
+    top: 260px;
+    left: 305px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+/* 产品展示 */
+.product-show{
+    background-color: #19b4ea;
+    padding: 30px 0;
+}
+.product-show .cn{
+    color:#fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.product-show .en{
+    margin-bottom: 30px;
+    color:#fff;
+    text-align: center;
+}
+
+.product-show .list{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.product-show .list .item{
+    float: left;
+    width: 230px;
+    margin-bottom: 0 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.product-show .list .item img{
+    display: block;
+    width: 100%;
+    height: 230px;
+    margin-bottom: 10px;
+}
+.product-show .list .item .name{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.product-show .list .item .price{
+    color: #fb7299;
+    text-align: center;
+}
+.product-show a{
+    display: block;
+    width: 80px;
+    padding: 10px 0;
+    text-align: center;
+    color: #19b4ea;
+    text-decoration: none;
+    background-color: #fff;
+    margin:0 auto;
+}
+.product-show a:hover{
+    background-color: #fb7299;
+    color:#fff;
+}
+
+/* 新闻中心 */
+.news-center{
+    overflow: hidden;
+    padding: 30px;
+}
+.news-center .left{
+    float: left;
+    width: 420px;
+}
+.news-center .left img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.news-center .right{
+    float: right;
+    width: 700px;
+}
+.news-center .right ul{
+    list-style: none;
+}
+.news-center .right ul li{
+    margin-bottom: 10px;
+}
+.news-center .right ul li a{
+    display: block;
+    overflow: hidden;
+}
+.news-center .right ul li a .date-box{
+    float: left;
+    width: 80px;
+}
+.news-center .right ul li a .text-box{
+    float: right;
+    width: 610px;
+}
+.news-center .right ul li a .date-box .num{
+    background-color: #19b4ea;
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+.news-center .right ul li a .date-box .date{
+    line-height: 28px;
+    text-align: center;
+    background-color: #fb7299;
+    color: #fff;
+}
+.news-center .right ul li a .text-box h2{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.ab{
+    display: block;
+    width: 100px;
+    height: 11px;
+    padding: 10px 0;
+    border: 1px solid#19b4ea;
+    text-align: center;
+    color: #19b4ea;
+    text-decoration: none;
+}
+.ab:hover{
+    background-color: #19b4ea;
+    color: #fff;
+}
+.news-center .cn{
+    font-size: 30px;
+    color:#000;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.news-center .en{
+    color:#000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* 底部 */
+.footer_box {
+	background: #19B4EA;
+	padding: 50px;
+}
+
+.footer_box .website_nav {
+	margin-bottom: 35px;
+	overflow: hidden;
+}
+
+.footer_box .website_1 {
+	float: left;
+	width: 800px;
+	overflow: hidden;
+}
+
+.footer_box .website_1 dl {
+	padding: 0;
+	margin: 0;
+	float: left;
+	padding: 0px 62px;
+	color: #fff;
+}
+
+.footer_box .website_1 dl dt {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer_box .website_1 dl dd {
+	padding: 0;
+	margin: 10px 0px;
+	font-size: 16px;
+}
+
+.footer_box .website_1 dl dd a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer_box .website_2 {
+	float: left;
+	width: 130px;
+	margin: 0px 10px;
+}
+
+.footer_box .website_2 .qrcode {
+	width: 100%;
+}
+
+.footer_box .website_2 .qrcode img {
+	width: 100%;
+}
+
+
+.footer_box .website_2 .qrcode_tit {
+	text-align: center;
+	color: #fff;
+}
+
+.footer_box .website_3 {
+	float: left;
+	width: 190px;
+	text-align: center;
+}
+
+.footer_box .website_3 .mobile_number {
+	color: #fb7299;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.footer_box .website_3 .email {
+	color: #fff;
+}
+
+.footer_box .powered_by {
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+}

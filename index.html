@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>孤勇者有限公司</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <style>
+      .swiper {
+        height: 400px;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #fb7299;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #fb7299;
+      }
+      .swiper img {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="collect-box">
+      <div class="inner">
+        <!--盒子居中-->
+        <div class="left">收藏本站</div>
+        <input class="right" placeholder="产品搜索" />
+      </div>
+    </div>
+
+    <!--导航栏-->
+    <div class="nav-box">
+      <div class="wrap">
+        <div class="left">
+          <img src="./images/logo.png" />
+        </div>
+        <div class="right">
+          <a href="#">首页</a>
+          <a href="#">公司简介</a>
+          <a href="#">产品中心</a>
+          <a href="#">文章中心</a>
+          <a href="#">企业荣誉</a>
+          <a href="#">人才招聘</a>
+          <a href="#">联系我们</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper轮播图 -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/swiper1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/swiper2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/swiper3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/swiper4.jpg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- 音频播放器 -->
+    <div class="title"><h1>背景音乐播放器</h1></div>
+    <div class="audio">
+      <input type="button" onclick="autoPlay()" value="播放 ▶️" />
+      <input type="button" onclick="closePlay()" value="关闭 ⏸" />
+    </div>
+    <!-- 公司简介 -->
+    <div class="company-intro wrap">
+      <div class="left">
+        <img src="./images/about.jpg" />
+      </div>
+      <div class="right">
+        <h1>公司简介</h1>
+        <p>
+          DouPHP是一款轻量级企业网站管理系统，基于PHP+Mysql架构的，可运行在Linux、Windows、MacOSX、Solaris等各种平台上，系统搭载Smarty模板引擎，支持自定义伪静态，前台模板采用DIV+CSS设计，后台界面设计简洁明了，功能简单易具有良好的用户体验，稳定性好、扩展性及安全性强，可面向中小型站点提供网站建设解决方案。传统的企业网站管理系统是以技术人员的角度出发，设计了很多复杂的功能，并且操作流程上也很...
+        </p>
+        <a href="#">查看详情</a>
+      </div>
+    </div>
+    <!-- 抢购倒计时 -->
+    <div class="box" style="background: url(./images/countdown.jpg)">
+      <div id="d"></div>
+      <!-- 剩余的天数 -->
+      <div id="h"></div>
+      <!-- 剩余的小时 -->
+      <div id="m"></div>
+      <!-- 剩余的分钟 -->
+      <div id="s"></div>
+      <!-- 剩余的秒数 -->
+    </div>
+    <!-- 产品展示 -->
+    <div class="product-show">
+      <div class="wrap">
+        <h2 class="cn">产品展示</h2>
+        <h2 class="en">RECOMMEND PRODUCT</h2>
+        <div class="list">
+          <div class="item">
+            <img src="./images/product1.jpg" alt="" />
+            <div class="name">法国合生元奶粉</div>
+            <div class="price">￥128.00元</div>
+            <a href="./shopPart/shop1.html">速度购！</a>
+          </div>
+
+          <div class="item">
+            <img src="./images/product2.jpg" />
+            <div class="name">Heinz金装粒粒面鳕鱼面</div>
+            <div class="price">￥68.00元</div>
+            <a href="./shopPart/shop2.html">速度购！</a>
+          </div>
+
+          <div class="item">
+            <img src="./images/product3.jpg" />
+            <div class="name">PES宽口套装奶瓶</div>
+            <div class="price">￥280.00元</div>
+            <a href="./shopPart/shop3.html">速度购！</a>
+          </div>
+
+          <div class="item">
+            <img src="./images/product4.jpg" />
+            <div class="name">帮宝适超薄干爽纸尿裤</div>
+            <div class="price">￥118.00 元</div>
+            <a href="./shopPart/shop4.html">速度购！</a>
+          </div>
+        </div>
+        <a href="#">查看更多</a>
+      </div>
+    </div>
+
+    <!-- 新闻中心 -->
+    <div class="news-center wrap">
+      <h2 class="cn">新闻中心</h2>
+      <h2 class="en">RECOMMEND NEWS</h2>
+      <div class="left">
+        <img src="./images/builder.jpg" />
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="date-box">
+                <div class="num">26</div>
+                <div class="date">2022-6-16</div>
+              </div>
+              <div class="text-box">
+                <h2>如何添加自定义字段</h2>
+                <p>
+                  以商品为例，如果要给商品加上自定义字段，首先找到系统设置-自定义然后填入如“颜色,尺寸,型号”中间以英文逗号隔开，然后在商品编...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="date-box">
+                <div class="num">26</div>
+                <div class="date">2022-6-16</div>
+              </div>
+              <div class="text-box">
+                <h2>如何添加自定义字段</h2>
+                <p>
+                  以商品为例，如果要给商品加上自定义字段，首先找到系统设置-自定义然后填入如“颜色,尺寸,型号”中间以英文逗号隔开，然后在商品编...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="date-box">
+                <div class="num">26</div>
+                <div class="date">2022-6-16</div>
+              </div>
+              <div class="text-box">
+                <h2>如何添加自定义字段</h2>
+                <p>
+                  以商品为例，如果要给商品加上自定义字段，首先找到系统设置-自定义然后填入如“颜色,尺寸,型号”中间以英文逗号隔开，然后在商品编...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="date-box">
+                <div class="num">26</div>
+                <div class="date">2022-6-16</div>
+              </div>
+              <div class="text-box">
+                <h2>如何添加自定义字段</h2>
+                <p>
+                  以商品为例，如果要给商品加上自定义字段，首先找到系统设置-自定义然后填入如“颜色,尺寸,型号”中间以英文逗号隔开，然后在商品编...
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a class="ab" href="#">更多文章</a>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer_box">
+      <div class="container_box">
+        <div class="website_nav">
+          <!-- 网站的地图 -->
+          <div class="website_1">
+            <dl>
+              <dt>公司简介</dt>
+              <dd><a href="#">公司荣誉</a></dd>
+              <dd><a href="#">发展历程</a></dd>
+              <dd><a href="#">联系我们</a></dd>
+            </dl>
+            <dl>
+              <dt>公司简介</dt>
+              <dd><a href="#">公司荣誉</a></dd>
+              <dd><a href="#">发展历程</a></dd>
+              <dd><a href="#">联系我们</a></dd>
+            </dl>
+            <dl>
+              <dt>公司简介</dt>
+              <dd><a href="#">公司荣誉</a></dd>
+              <dd><a href="#">发展历程</a></dd>
+              <dd><a href="#">联系我们</a></dd>
+            </dl>
+            <dl>
+              <dt>公司简介</dt>
+              <dd><a href="#">公司荣誉</a></dd>
+              <dd><a href="#">发展历程</a></dd>
+              <dd><a href="#">联系我们</a></dd>
+            </dl>
+          </div>
+
+          <!-- 二维码 -->
+          <div class="website_2">
+            <div class="qrcode">
+              <img src="./images/weixin.png" alt="" />
+            </div>
+            <div class="qrcode_tit">微信没有二维码</div>
+          </div>
+
+          <!-- 联系方式 -->
+          <div class="website_3">
+            <div class="mobile_number">10086-666666</div>
+            <div class="email">10086110@163.com</div>
+            <div style="opacity: 0">
+              <audio
+                src="video/Shelter.mp3"
+                id="myaudio"
+                controls="controls"
+                autoplay="autoplay"
+                loop="fixed"
+              ></audio>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="powered_by">
+          © B站大学 企业网站管理系统 2023 All Rights Reserved. Powered by me.
+        </div>
+      </div>
+    </div>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: true, //自动播放
+        slidesPerView: 1, //一次只能看到多少张图片
+        spaceBetween: 0, //每一张图片之间的距离
+        loop: true, //true为循环播放
+        pagination: {
+          //分页器配置
+          el: ".swiper-pagination", //element元素 分页器对应的div类名
+          clickable: true, //轮播图下面的小点点（分页器）可点击
+        },
+        navigation: {
+          //左右按钮，前进后退，控制切换
+          nextEl: ".swiper-button-next", //右边按钮类名
+          prevEl: ".swiper-button-prev", //左边按钮类名
+        },
+      });
+    </script>
+
+    <script name="audio">
+      function autoPlay() {
+        //播放音频
+        var myAuto = document.getElementById("myaudio");
+        myAuto.play();
+      }
+      function closePlay() {
+        //关闭音频
+        var myAuto = document.getElementById("myaudio");
+        myAuto.pause();
+      }
+    </script>
+    <script name="countdown">
+      // 设置秒杀结束时间
+      // 设置据当前时间开始，秒杀的结束时间
+      var endtime = new Date(),
+        endseconds = endtime.getTime() + 60 * 60 * 60 * 1000;
+      // 声明变量保存剩余的时间
+      var d = (h = m = s = 0);
+      // 设置定时器
+      var id = setInterval(seckill, 1000);
+      function seckill() {
+        var nowtime = new Date(); // 获取当前时间
+        // 获取时间差，单位秒
+        var remaining = parseInt((endseconds - nowtime.getTime()) / 1000);
+        // 判断秒杀是否过期
+        if (remaining > 0) {
+          d = parseInt(remaining / 86400); // 计算剩余天数（除以60*60*24取整，获取剩余的天数）
+          h = parseInt((remaining / 3600) % 24); // 计算剩余小时（除以60*60转换为小时，与24取模，获取剩余的小时）
+          m = parseInt((remaining / 60) % 60); // 计算剩余分钟（除以60转为分钟，与60取模，获取剩余的分钟）
+          s = parseInt(remaining % 60); // 计算剩余秒（与60取模，获取剩余的秒数）
+          // 统一利用两位数表示剩余的天、小时、分钟、秒
+          d = d < 10 ? "0" + d : d;
+          h = h < 10 ? "0" + h : h;
+          m = m < 10 ? "0" + m : m;
+          s = s < 10 ? "0" + s : s;
+        } else {
+          clearInterval(id); // 秒杀过期，取消定时器
+          d = h = m = s = "00";
+        }
+        // 将剩余的天、小时、分钟和秒显示到指定的网页中
+        document.getElementById("d").innerHTML = d + "天";
+        document.getElementById("h").innerHTML = h + "时";
+        document.getElementById("m").innerHTML = m + "分";
+        document.getElementById("s").innerHTML = s + "秒";
+      }
+    </script>
+  </body>
+</html>
